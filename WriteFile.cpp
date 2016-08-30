@@ -1,6 +1,27 @@
 #include "WriteFile.h"
 #include <sstream>
 
+WriteFile::WriteFile(ofstream output_file1, bool closed1)
+{
+	output_file = new ofstream(output_file1->getText());
+	closed = new bool(closed1->getText());
+}
+
+WriteFile::~WriteFile()
+{
+	delete output_file;
+	delete closed;
+}
+
+void Song::displayWriteFile()
+{
+	output_file->displayString();
+	cout << " ";
+	closed->displayString();
+	cout << endl;
+}
+
+/*
 WriteFile* createWriteFile(const char* file_name)
 {
    WriteFile* wf = new WriteFile;
@@ -31,3 +52,4 @@ void writeLine(WriteFile* wf, String* line)
       wf->output_file << line->getText() << endl;
    }
 }
+*/
