@@ -6,15 +6,23 @@
 #include <fstream>
 using namespace std;
 
-struct WriteFile
+//Compiler needs to know the size
+class WriteFile
 {
-   ofstream output_file;
-   bool closed;
+	private:
+		ofstream output_file;
+		bool closed;
+	public:
+		WriteFile(ofstream output_file, bool closed);
+		~WriteFile();
+		void displayWriteFile();
 };
 
+/*
 WriteFile* createWriteFile(const char* file_name);
 void destroyWriteFile(WriteFile* wf);
 void writeLine(WriteFile* wf, String* line);
 void close(WriteFile* wf);
+*/
 
 #endif
