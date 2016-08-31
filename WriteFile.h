@@ -16,6 +16,7 @@ class WriteFile
 		WriteFile(ofstream output_file, bool closed);
 		~WriteFile();
 		void displayWriteFile();
+		void writeLine(WriteFile* )
 };
 
 /*
