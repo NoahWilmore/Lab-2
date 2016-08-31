@@ -7,6 +7,7 @@
 using namespace std;
 
 //Compiler needs to know the size
+/*
 class WriteFile
 {
 	private:
@@ -16,9 +17,9 @@ class WriteFile
 		WriteFile(ofstream output_file, bool closed);
 		~WriteFile();
 		void displayWriteFile();
-		void writeLine(WriteFile* )
+		void writeLine(WriteFile* );
 };
-
+*/
 /*
 WriteFile* createWriteFile(const char* file_name);
 void destroyWriteFile(WriteFile* wf);

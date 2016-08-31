@@ -13,7 +13,17 @@ class ReadFile
 		bool _eof;
 		bool closed;
 	public:
-		ReadFile(ifstream)
+		ReadFile(const char* file_name);
+		virtual ~ReadFile();
+		void displayReadFile();
+		String* readLine();
+		bool eof();
+		void close();
+		
+		void setEOF(bool _eof) {
+			this->_eof = _eof;
+		}
+		
 
 };
 
