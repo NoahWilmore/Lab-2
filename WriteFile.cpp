@@ -7,7 +7,7 @@ WriteFile::WriteFile(const char* file_name)
    closed = false;
 }
 
-//WriteFile::~WriteFile() {}
+WriteFile::~WriteFile() {}
 
 void WriteFile::close()
 {

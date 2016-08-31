@@ -15,7 +15,7 @@ class WriteFile
 		bool closed;
 	public:
 		WriteFile(const char* file_name);
-		//virtual ~WriteFile();
+		virtual ~WriteFile();
 		void displayWriteFile();
 		void writeLine(String* line);
 		void close();

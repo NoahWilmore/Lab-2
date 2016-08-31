@@ -21,6 +21,7 @@ ReadFile::~ReadFile()
 	/*delete input_file;
 	delete closed;*/
 }
+
 /*
 void Song::displayReadFile()
 {
