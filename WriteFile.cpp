@@ -7,8 +7,9 @@ WriteFile::WriteFile(const char* file_name)
    closed = false;
 }
 
+//WriteFile::~WriteFile() {}
 
-void close()
+void WriteFile::close()
 {
    if (!this->closed)
    {
@@ -17,15 +18,13 @@ void close()
    }
 }
 
-void writeLine(String* line)
+void WriteFile::writeLine(String* line)
 {
    if (!this->closed && line->length() > 0)
    {
       this->output_file << line->getText() << endl;
    }
 }
-
-
 
 
 
